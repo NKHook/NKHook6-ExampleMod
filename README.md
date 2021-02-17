@@ -57,10 +57,10 @@ Entry.cs - The file for where code execution begins.
 Events.cs - A seperate class that Entry.cs adds as an event handling class.
 |
 References - This folder is where libraries for the project are stored.
-|    |
-|    CMakeLists.txt - This file tells CMake what libraries exist.
-|    NKHook6.dll - The NKHook6.dll your project will be using ([UPDATE THIS](https://nkhook.pro/pages/bloons6.html)!!)
-|    MelonLoader.dll - The dll for MelonLoader code that your project must include to be loaded into the game.
+|   |
+|   CMakeLists.txt - This file tells CMake what libraries exist.
+|   NKHook6.dll - The NKHook6.dll your project will be using ([UPDATE THIS](https://nkhook.pro/pages/bloons6.html)!!)
+|   MelonLoader.dll - The dll for MelonLoader code that your project must include to be loaded into the game.
 |
 Properties - Where the C# AssemblyInfo.cs is stored.
 |   |
