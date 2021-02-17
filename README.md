@@ -44,6 +44,28 @@ Release is used for when you want to share your mod with the world and have othe
 cmake --build . --config Release
 ```
 
+## Project structure
+Here's a map of the project, containing a description of what each file is for.
+
+Root
+|
+README.md - This file
+.gitignore - Lets Git know what kinds of files to ignore
+CMakeLists.txt - This is the main file for CMake, it has information about project setup and structure.
+Entry.cs - The file for where code execution begins.
+Events.cs - A seperate class that Entry.cs adds as an event handling class.
+|
+References - This folder is where libraries for the project are stored.
+|    |
+|    CMakeLists.txt - This file tells CMake what libraries exist.
+|    NKHook6.dll - The NKHook6.dll your project will be using ([UPDATE THIS](https://nkhook.pro/pages/bloons6.html)!!)
+|    MelonLoader.dll - The dll for MelonLoader code that your project must include to be loaded into the game.
+|
+Properties - Where the C# AssemblyInfo.cs is stored.
+|   |
+|   AssemblyInfo.cs - General info for C#/.Net runtime to use, MelonLoader also uses this for mod details.
+|   CMakeLists.txt - This file tells CMake that the AssemblyInfo.cs file is code.
+
 
 ## Conclusion
 Cool! You should now have a good understanding of this project structure and how to make mods with it. Happy modding!

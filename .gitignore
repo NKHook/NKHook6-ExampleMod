@@ -1,0 +1,12 @@
+CMakeFiles/
+*.vcxproj
+*.vcxproj.filters
+*.csproj
+*.sln
+*.cmake
+Debug/
+Release/
+obj/
+x64/
+x86/
+x32/
