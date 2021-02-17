@@ -26,16 +26,22 @@ Now that you have your tools set up, lets get building!
 ### CMake Cache
 Before we can do anything, we must set up the CMake Cache. This is for cmake to use to build our project. We only have to do this once, but you may do it as many times as you please.
 To generate the CMake cache, do the following command in a Terminal or Command Prompt window.
-```cmake .```
+```
+cmake .
+```
 
 ### Building
 Now that the cache is ready, we can build. There are 2 different types of builds that we care about: **Debug** and **Release**.
 
 Debug is good for testing your mod to ensure it is working as expected. To build with Debug, use the following command:
-```cmake --build .```
+```
+cmake --build .
+```
 
 Release is used for when you want to share your mod with the world and have other people use it. To build with Release, use the following command:
-```cmake --build . --config Release```
+```
+cmake --build . --config Release
+```
 
 
 ## Conclusion
