@@ -16,6 +16,8 @@ Let me elaborate on that last part. That is one huge reason this project uses CM
 
 Most of you probably won't care about these things either way, but it's important to know what you're working with when using this as an example for your project.
 
+Another interesting this to take note, this project **does not touch the game's code directly *ever*.**
+
 ## Setup
 This section is to help you get your build system setup.
 
