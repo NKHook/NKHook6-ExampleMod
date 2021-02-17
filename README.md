@@ -9,6 +9,7 @@ Using CMake provides some advantages that the traditional setup doesn't allow.
 - Faster
 - Cleaner
 - Freedom in project structure
+- Can be used with more IDE's than the alternative
 - CMake generates the project around how you use it
 
 Let me elaborate on that last part. That is one huge reason this project uses CMake. With the CMake setup for the standard NKHook6 Implementation, we need the implementation to include the API code. Doing this with the standard setup can be very messy and annoying to work with. With CMake, its a different story, we can simply add the submodule and build the code into the main implementation, while still maintaining the API as a seperate project with its own repository.
