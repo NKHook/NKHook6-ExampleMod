@@ -47,6 +47,7 @@ cmake --build . --config Release
 ## Project structure
 Here's a map of the project, containing a description of what each file is for.
 
+```
 Root
 |
 README.md - This file
@@ -65,6 +66,7 @@ Properties - Where the C# AssemblyInfo.cs is stored.
 |   |
 |   AssemblyInfo.cs - General info for C#/.Net runtime to use, MelonLoader also uses this for mod details.
 |   CMakeLists.txt - This file tells CMake that the AssemblyInfo.cs file is code.
+```
 
 
 ## Conclusion
