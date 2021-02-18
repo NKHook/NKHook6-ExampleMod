@@ -1,6 +1,8 @@
 # NKHook6 Example Mod
 An example mod template to use for your Bloons TD 6 mod using NKHook6
 
+## About the mod
+This project is a simple mod that makes you lose money instead of health. A prototype of this mod was featured on [Tewtiy's youtube channel](https://youtu.be/v5XPElPu2og).
 
 ## Project setup
 This Example Mod uses CMake, which may seem scary at first. Most modders are farmiliar with Microsoft's Visual Studio project setup using a .sln file for the solution, or a .csproj for a single project, or both used together.

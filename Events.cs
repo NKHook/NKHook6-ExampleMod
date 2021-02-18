@@ -10,25 +10,16 @@ namespace ExampleMod
     // Class for handling events (this can be any class)
     public class Events 
     {
-        // Mark this function to be used for a BloonMoveEvent
+        //This will get called every time a bloon leaks
         [Event]
-        public static void onMove(BloonEvents.MoveEvent e) // Create the function
+        public static void OnLeak(BloonEvents.LeakedEvent e)
         {
-            IBloonEntity bloon = e.GetBloon(); // Get the bloon
-            if(bloon is GreenCamoBloon) // Check if the bloon is Green and Camo
-            {
-                float prog = bloon.GetProgress(); // Get the bloon's progress
-                if(prog > 500.0f) // If the progress is over 500
-                {
-                    e.SetCancelled(true); // Cancel the event (The bloon will not move)
-                }
-            }
-            else {
-                if(bloon.GetProgress() > 1000.0f) // If the progress is over 1000
-                {
-                    e.SetCancelled(true); // Cancel the event
-                }
-            }
+            //Get the bloon instance
+            IBloonEntity bloon = e.GetBloon();
+            //Get the bloon type
+            IBloon bloonType = bloon.GetType();
+            //Get the amount of leak damage
+            float leakDamage = bloonType.GetLeakDamage();
         }
     }
 }
