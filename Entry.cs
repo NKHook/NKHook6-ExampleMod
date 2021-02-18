@@ -14,10 +14,10 @@ namespace ExampleMod
     public class Entry : MelonMod, BTDModStart
     {
         //Gets called after BTD6 has fully loaded, this way you can access most data without a NullPointerException.
-        public void onModLoaded()
+        public void OnModLoaded()
         {
             //Listen for events in this class
-            EventRegistry.instance.listen(typeof(Entry));
+            EventRegistry.instance.Listen(typeof(Entry));
         }
     }
 }

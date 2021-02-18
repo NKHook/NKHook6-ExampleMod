@@ -11,20 +11,20 @@ namespace ExampleMod
     public class Events 
     {
         // Mark this function to be used for a BloonMoveEvent
-        [EventAttribute("BloonMoveEvent")]
+        [Event]
         public static void onMove(BloonEvents.MoveEvent e) // Create the function
         {
-            IBloonEntity bloon = e.getBloon(); // Get the bloon
+            IBloonEntity bloon = e.GetBloon(); // Get the bloon
             if(bloon is GreenCamoBloon) // Check if the bloon is Green and Camo
             {
-                float prog = bloon.getProgress(); // Get the bloon's progress
+                float prog = bloon.GetProgress(); // Get the bloon's progress
                 if(prog > 500.0f) // If the progress is over 500
                 {
                     e.SetCancelled(true); // Cancel the event (The bloon will not move)
                 }
             }
             else {
-                if(bloon.getProgress() > 1000.0f) // If the progress is over 1000
+                if(bloon.GetProgress() > 1000.0f) // If the progress is over 1000
                 {
                     e.SetCancelled(true); // Cancel the event
                 }
