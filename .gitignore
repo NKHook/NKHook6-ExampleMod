@@ -10,3 +10,5 @@ obj/
 x64/
 x86/
 x32/
+build/
+CMakeCache.txt
